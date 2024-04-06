@@ -27,8 +27,8 @@ approx = cv2.approxPolyDP(contours[3], epsilon, True)
 contour_image = np.zeros_like(my_photo)
 
 # Нарисовать контуры на пустом изображении
-#cv2.drawContours(contour_image, contours, -1, (255, 255, 255), 1)
-cv2.drawContours(contour_image, [approx], -1, (255, 255, 255), 1)
+cv2.drawContours(contour_image, contours, -1, (255, 255, 255), 1)
+#cv2.drawContours(contour_image, [approx], -1, (255, 255, 255), 1)
 
 # Отображение исходного, уравненного, медианно отфильтрованного и контурного изображений
 cv2.imshow('Original Image', my_photo)
